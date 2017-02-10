@@ -1,0 +1,44 @@
+
+h1 {
+    position: relative;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+table.sudoku2 {
+    border-collapse: collapse;
+    font-family: Calibri, sans-serif;
+}
+.sudoku2 tr:nth-of-type(3n) {
+    border-bottom: solid medium;
+}
+.sudoku2 td:nth-of-type(3n) {
+    border-right: solid medium;
+}
+.sudoku2 td {
+    border: solid thin;
+    height: 1.4em;
+    width: 1.4em;
+    text-align: center;
+    padding: 0;
+}
+
+/* Presentation Formatting [Ignore] */
+table[class^="sudoku"] {
+  margin: auto;
+      position: relative;
+
+}
+.right {
+    float: right;
+    width: 300px;
+.wrapper {
+  width: 100%;
+}
+.col {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
