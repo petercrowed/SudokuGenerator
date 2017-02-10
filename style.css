@@ -1,26 +1,36 @@
     h1 {
-    position: relative;
+
     text-align: center;
     font-size: 2em;
     font-weight: bold;
+
+    margin: auto;
+    width: 50%;
+
 }
 
-.button1 {
+h2{
+    margin: auto;
+    width: 24%;
+
+    padding: 10px;
+}
+h2.button1 {
     position: fixed;
     top: 280px;
     right: 420px;
 }
-.button2  {
+h2.button2  {
     position: fixed;
     top: 280px;
     right: 370px;
 }
-.button3  {
+h2.button3  {
     position: fixed;
     top: 280px;
     right: 300px;
 }
-.button4  {
+h2.button4  {
     position: fixed;
     top: 280px;
     right: 250px;
@@ -53,7 +63,13 @@ table.sudoku2 {
 
 table[class^="sudoku"] {
     margin: auto;
-    position: relative;
+
+}
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
 }
 
 .right {

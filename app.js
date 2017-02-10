@@ -1,19 +1,25 @@
 $(document).ready(function() {
-// Grid Generator
-window.difficulty = function(howHard){
 
-    var data = getSudoku(howHard);
-    // Build page content.
-    $('body').append($('<div>').addClass('wrapper')
-        .append($('<div>').addClass('col')
-            .append($('<h1>').html('Sudoku'))
-            .append(generateSudokuGrid2())));
+    // Grid Generator
+    window.difficulty = function(howHard) {
+        var data = getSudoku(howHard);
+        // Build page content.
 
-    // Populate grids with data.
-    $('table[class^="sudoku"]').each(function(index, grid) {
-        populateGrid($(grid), data);
-    });
-  }
+        var elm = $('table');
+
+        elm.remove();
+
+        $('body').append($('<div>').addClass('wrapper')
+            .append($('<div>').addClass('col')
+
+                .append(generateSudokuGrid2())));
+
+        // Populate grids with data.
+        $('table[class^="sudoku"]').each(function(index, grid) {
+            populateGrid($(grid), data);
+        });
+
+    }
 });
 
 function populateGrid(grid, data) {
