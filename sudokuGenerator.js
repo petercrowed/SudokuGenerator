@@ -1,5 +1,5 @@
-function getSudoku() {
-
+function getSudoku(howHard) {
+// Sudoku Numbers Generator
 
     var board = new Array(9);
     for (var i = 0; i < 9; i++) {
@@ -128,7 +128,7 @@ function getSudoku() {
         }
     }
 
-    var table = nextBoard(49);
+    var table = nextBoard(howHard);
 
     print();
     //  console.log(numbers);

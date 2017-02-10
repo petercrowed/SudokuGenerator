@@ -1,6 +1,8 @@
 $(document).ready(function() {
+// Grid Generator
+window.difficulty = function(howHard){
 
-    var data = getSudoku();
+    var data = getSudoku(howHard);
     // Build page content.
     $('body').append($('<div>').addClass('wrapper')
         .append($('<div>').addClass('col')
@@ -11,6 +13,7 @@ $(document).ready(function() {
     $('table[class^="sudoku"]').each(function(index, grid) {
         populateGrid($(grid), data);
     });
+  }
 });
 
 function populateGrid(grid, data) {
@@ -57,4 +60,5 @@ Array.prototype.remove = function() {
         }
     }
     return this;
+
 };
